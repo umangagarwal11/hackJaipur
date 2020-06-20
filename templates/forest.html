@@ -3,41 +3,33 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Fight the Fires</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="black lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Forest Fire Prevention</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Predict the probability of Forest-Fire Occurence
-        <br>
-        </h5>
-      </div>
+  <div class="section no-pad-bot" id="index-banner" style="padding:0">
+    <div class="row center" style="height:92vh; background:url('../static/img/page1.png');background-position: center; background-repeat: no-repeat;  background-size: 100% 100%; margin-bottom:0;">
+      <h1 class="header col s12 l6 light" style="color:white; margin-top: 10%; font-family: sans-serif; font-size:800%; font-weight:bold;">Forest Fire Prevention
+      <br>
+      </h5>
+    </div>
 
-              <div class="row">
-    <form action='/predict' method="post" class="col s12">
+    <div style="">
+
+              <div class="row" style="padding-left:10%; padding-right:10%; margin-bottom: 0; height:100vh;background:url('../static/img/page2.png');background-position: center; background-repeat: no-repeat;  background-size: 100% 100%;">
+    <form action='/predict' method="post" class="col s12" style="margin-top:40vh">
       <div class="row">
         <div class="input-field col s4">
             <label for="first_name"><b>Temperature</b></label>
@@ -63,23 +55,22 @@
 
       <div class="row center">
 
-          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          <button type="submit" class="btn-large waves-effect waves-light orange" style="border-radius:40px/40px">Predict Probability</button>
       </div>
     </form>
+    <span class="col s12" style="color:white; margin-top: 5%; text-align:center"> {{pred}}</span><br>
       </div>
 
-      <br>
-        {{pred}}<br>
 
     </div>
   </div>
 
 
-    <br><br>
+
   </div>
   </div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -88,29 +79,11 @@
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -123,4 +96,3 @@
 
   </body>
 </html>
-
