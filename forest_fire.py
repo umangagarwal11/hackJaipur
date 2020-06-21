@@ -1,4 +1,3 @@
-#!C:\Users\Lenovo\AppData\Local\Programs\Python\Python37-32\python.exe
 
 import numpy as np
 import pandas as pd
@@ -30,5 +29,3 @@ b = log_reg.predict_proba(final)"""
 
 pickle.dump(log_reg,open('model.pkl','wb'))
 model=pickle.load(open('model.pkl','rb'))
-
-
